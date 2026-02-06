@@ -455,3 +455,87 @@ a:hover
     display: flex;
     justify-content: center;
 }
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .panel-options {
+        display: none;
+    }
+
+    .shop-section .box1,
+    .shop-section .box2,
+    .shop-section .box3,
+    .shop-section .box4,
+    .shop-section .box5,
+    .shop-section .box6,
+    .shop-section .box7,
+    .shop-section .box8 {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    .foot-panel2 {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .nav-logo {
+        width: 120px;
+    }
+
+    .address,
+    .nav-return {
+        display: none;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .panel {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .shop-section .box1,
+    .shop-section .box2,
+    .shop-section .box3,
+    .shop-section .box4,
+    .shop-section .box5,
+    .shop-section .box6,
+    .shop-section .box7,
+    .shop-section .box8 {
+        width: 95%;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
